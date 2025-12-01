@@ -1,0 +1,21 @@
+{
+  "name": "ST.LUKE-SIES-V2 Codespace",
+  "build": {
+    "dockerfile": "Dockerfile"
+  },
+  "extensions": [
+    "bmewburn.vscode-intelephense-client",
+    "felixfbecker.php-debug",
+    "ikappas.phpcs",
+    "neilbrayfield.php-docblocker",
+    "ms-azuretools.vscode-docker",
+    "esbenp.prettier-vscode",
+    "eamodio.gitlens"
+  ],
+  "forwardPorts": [80, 3306, 9003],
+  "postCreateCommand": "composer install || true",
+  "remoteUser": "vscode",
+  "containerEnv": {
+    "XDEBUG_MODE": "off"
+  }
+}
